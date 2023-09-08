@@ -5,7 +5,7 @@ class TituloDinamico extends HTMLElement {
 
         //base
         const componentRoot = document.createElement("h1");
-        componentRoot.textContent = "Título da notícia";
+        componentRoot.textContent = this.getAttribute("titulo"); //props
 
         //estilo - todo estilo que eu crio na shadow dom só vale para a shadow dom e para o componente específico
         // o comportamento do componente é isolado do restante (scoped)
