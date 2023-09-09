@@ -13,27 +13,28 @@
 
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card__left">
-                <span>Raul Dionisio</span>
-                <a href="#">Darth Vader contrata devs</a>
-                <p>Darth Vader procura desenvolvedores que saibam trabalhar com componentes</p>
-            </div>
-            <div class="card__right">
-                <img src="assets/dart_Vader.jpeg" alt="Darth Vader">
-            </div>
-        </div>
-    </div>
-
-    <card-news 
+        <card-news 
         autor="Raul"
         title="Darth Vader contrata devs"
         link-url="google.com"
         newsContent="Darth Vader procura desenvolvedores que saibam trabalhar com componentes"
         photo = "assets/dart_Vader.jpeg"
     ></card-news>
-    <titulo-dinamico titulo="Notícia urgente"></titulo-dinamico>
-    <titulo-dinamico titulo="O meliante foi em cana! VIVA!"></titulo-dinamico>
+
+    <card-news 
+        title="Darth Vader contrata QAs"
+        link-url="google.com"
+        newsContent="Darth Vader procura testadores que saibam trabalhar com Cypress"
+        photo = "assets/dart_Vader.jpeg"
+    ></card-news>
+
+    <card-news 
+    title="Yoda convence republica a usar componente"
+    link-url="google.com"
+    newsContent="Yoda se pronuncia e choca a republica"
+    ></card-news>
+    </div>
+
 </body>
 
 </html>

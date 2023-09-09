@@ -41,7 +41,47 @@ class CardNews extends HTMLElement {
         return componentRoot;
     }
 
-    styles() { }
+    styles() { 
+
+        const style = document.createElement('style');7
+
+        style.textContent = `
+        .card {
+            width: 80%;
+            box-shadow: 7px 17px 28px -9px rgba(0, 0, 0, 0.6);
+            -webkit-box-shadow: 7px 17px 28px -9px rgba(0, 0, 0, 0.6);
+            -moz-box-shadow: 7px 17px 28px -9px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .card__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+        }
+        
+        .card__left>span {
+            font-weight: 400;
+        }
+        
+        .card__left>a {
+            margin-top: 15px;
+            font-size: 25px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .card__left>p {
+            color: rgb(70, 70, 70);
+        }
+        `
+
+        return style;
+    }
 }
 
 customElements.define('card-news', CardNews) //as tags customizadas precisam ter sempre o hifén no nome
